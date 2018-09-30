@@ -11,7 +11,7 @@ from queue import *
 
 
 
-# this class handles the requests for Link search
+# This class handles the requests for Link search
 
 class LinkThread (threading.Thread):
     def __init__(self):
@@ -71,12 +71,6 @@ class LinkThread (threading.Thread):
                 s.remove(l)
         return final
 
-
-
-
-
-
-
     # returns all the links found on a url
     def getLinks(self , url):
         res = []
@@ -97,13 +91,7 @@ class LinkThread (threading.Thread):
         return res
 
 
-
-
-
-
 # this class handles the requests for keyword search
-
-
 class SearchThread(threading.Thread):
     def __init__(self):
         threading.Thread.__init__(self)
@@ -164,8 +152,6 @@ class SearchThread(threading.Thread):
 
 
 # this class handles the requests for Mail search
-
-
 class MailThread(threading.Thread):
     def __init__(self):
         threading.Thread.__init__(self)
