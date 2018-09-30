@@ -176,7 +176,7 @@ class Application(Frame):
 
 
 
-
+# creating the gui loop
 def main():
     root = Tk()
     app = Application(root)
